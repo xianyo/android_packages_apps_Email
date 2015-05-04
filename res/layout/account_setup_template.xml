@@ -82,8 +82,6 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_gravity="center_vertical"
-            android:drawableEnd="@drawable/ic_next"
-            android:drawableRight="@drawable/ic_next"
             android:drawablePadding="@dimen/setup_nav_button_drawable_padding"
             android:text="@string/next"
             style="@style/account_setup_nav_button" />
