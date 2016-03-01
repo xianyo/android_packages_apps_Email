@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifeq ($(HAVE_FSL_IMX_GPU3D),true)
 LOCAL_PATH := $(call my-dir)
 
 # Build the Email application itself, along with its tests and tests for the emailcommon
@@ -73,4 +74,5 @@ include $(BUILD_PACKAGE)
 ifeq ($(strip $(LOCAL_PACKAGE_OVERRIDES)),)
 # additionally, build unit tests in a separate .apk
 include $(call all-makefiles-under,$(LOCAL_PATH))
+endif
 endif
